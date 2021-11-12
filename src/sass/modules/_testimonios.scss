@@ -1,0 +1,174 @@
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+    }
+    
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -moz-font-feature-settings: 'liga';
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    #testimonios_container {
+        position: relative;
+        padding-bottom: 2%;
+        height: 100vh;
+        .container {
+            z-index: 9;
+            position: relative;
+            height: 100%;
+        }
+    }
+    
+    #testimonios_container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $principal;
+        opacity: .8;
+        z-index: 1;
+    }
+    
+    .card {
+        max-width: 90%;
+        margin: 14px auto;
+        position: relative;
+        .card-content {
+            display: none;
+            h4.name {
+                font-size: 21px;
+                font-weight: 700;
+                background: $principal;
+                padding: 5px;
+                display: table;
+                margin-bottom: 0;
+                color: $white;
+                margin-top: 4px;
+            }
+            p {
+                font-size: 16px;
+                margin: 14px 0px;
+            }
+        }
+        .dialog-icon {
+            transform: rotateY(0deg) rotate(45deg);
+            position: absolute;
+            top: -2rem;
+            left: 2%;
+        }
+        // #dialog-icon-1 {
+        //     transition: all 2s ease-in-out 0s;
+        //     left: 2%;
+        // }
+        // #dialog-icon-2 {
+        //     transition: all 2s ease-in-out 0s;
+        //     left: 30%;
+        // }
+        // #dialog-icon-3 {
+        //     transition: all 2s ease-in-out 0s;
+        //     left: 60%;
+        // }
+        // #dialog-icon-4 {
+        //     transition: all 2s ease-in-out 0s;
+        //     left: 90%;
+        // }
+        .card-image {
+            img {
+                height: 200px;
+                width: auto;
+            }
+        }
+    }
+    
+    .middle-indicator {
+        position: absolute;
+        top: 50%;
+    }
+    
+    a.middle-indicator-text {
+        font-size: 4.2rem;
+        color: white !important;
+    }
+    
+    .content-indicator {
+        width: 64px;
+        height: 64px;
+        background: none;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    .indicators {
+        visibility: hidden;
+    }
+    
+    .carousel.carousel-slider {
+        height: 100vh !important;
+        .carousel-item {
+            min-height: 100vh;
+        }
+        // .carousel-fixed-item {
+        //     height: 0;
+        // }
+    }
+    
+    .row_collage {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 0px;
+        position: absolute;
+        height: 100vh;
+        overflow: hidden;
+    }
+    /* Create four equal columns that sits next to each other */
+    
+    .column_collage {
+        -ms-flex: 100%;
+        /* IE10 */
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 0px;
+        height: 100vh;
+        img {
+            margin-top: 0px;
+            vertical-align: middle;
+            width: 100%;
+        }
+    }
+    
+    @include mq(tablet) {
+        .column_collage {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    
+    @include mq(phablet) {
+        .column_collage {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }

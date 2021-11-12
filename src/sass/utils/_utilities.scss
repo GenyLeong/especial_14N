@@ -1,0 +1,58 @@
+.text-weight {
+    font-weight: 700;
+    margin-bottom: 7px;
+    @include breakpoint(desktop_large) {
+        margin-bottom: 14px;
+    }
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.text-span {
+    color: #1c2938;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pd-0 {
+    padding: 0;
+}
+
+.mt-14 {
+    margin-top: 14px;
+}
+
+.mt-21 {
+    margin-top: 21px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+small {
+    display: block;
+    margin: auto;
+}
+
+.visible {
+    display: block !important;
+}
+
+.container {
+    @include breakpoint(desktop) {
+        width: 85%;
+    }
+}

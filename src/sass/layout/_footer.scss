@@ -1,0 +1,95 @@
+/*---------------------------------------------------------------------------*
+ * Footer
+----------------------------------------------------------------------------*/
+footer {
+  background: #fafafa;
+  color: #000;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 3rem;
+  margin-top: 4rem;
+
+  .img {
+    max-width: 140px;
+    display: inline-block;
+    margin: 7px 14px 14px 14px;
+  }
+  .footer_1 {
+    max-width: 120px;
+  }
+  p {
+    margin: 0 0 4px;
+    @include breakpoint(desktop_large) {
+      margin: 0 0 7px;
+    }
+  }
+
+  .footer_text {
+    margin-top: 14px;
+  }
+  a {
+    color: #000;
+    &:hover {
+      color: #000;
+    }
+    &:visited {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  .container-footer {
+    text-align: center;
+    max-width: 700px;
+  }
+  @include breakpoint(desktop_large) {
+    // padding: 5rem;
+    // margin-top: 5.1rem;
+  }
+}
+.box_rrss {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 2rem;
+
+  .popup {
+    margin: 4px 7px;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 14px;
+    width: 21px;
+    height: 21px;
+  }
+  // span {
+  //   margin: 4px 7px;
+  //   padding: 1rem;
+  //   border: 2px solid #fff;
+  //   border-radius: 50%;
+  // }
+  .social-icon {
+    width: 42px;
+  }
+  @include breakpoint(tablet) {
+    // height: 150px;
+    // margin-top: 0;
+  }
+}
+.inline-box {
+  display: inline-flex;
+  margin: 0;
+  padding: 3px 0px;
+  .social-icon {
+    width: 21px;
+  }
+  @include breakpoint(phablet) {
+    padding: 0px;
+  }
+}
+/*---------------------------------------------------------------------------*
+ * Fin:Footer
+----------------------------------------------------------------------------*/

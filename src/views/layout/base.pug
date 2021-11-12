@@ -1,0 +1,61 @@
+include ../config/config.pug
+doctype html
+html(lang="es")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title #{site_title}
+    meta(name="description", content=site_description)
+    meta(name="author", content=site_author)
+    meta(name="keywords", content=site_keywords)
+    meta(property='og:title' content=site_title)
+    meta(property='og:type' content='website')
+    meta(property='og:url' content=site_url)
+    meta(property='og:image' content='https://data.larepublica.pe/mariscal-ramon-castilla-una-provincia-condenada-al-abandono/img/portada_general.jpg')
+    meta(property='og:site_name' content='La República')
+    meta(property='og:description' content=site_description)
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:site' content='@larepublica_pe')
+    meta(name='twitter:url' content=site_url)
+    meta(name='twitter:image' content='https://data.larepublica.pe/mariscal-ramon-castilla-una-provincia-condenada-al-abandono/img/portada_general.jpg')
+    meta(name='twitter:title' content=site_title)
+    meta(name='twitter:description' content=site_description)
+    meta(name='twitter:width' content='150')
+    meta(name='twitter:height' content='120')
+    meta(name="MobileOptimized" content="width")
+    meta(name="HandheldFriendly" content="true")
+    link(rel='canonical', href=site_url)    
+    link(href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css')
+    link(rel="icon" href="https://cdn.larepublica.pe/favicon-32x32.png" sizes="32x32")    
+    link(rel='stylesheet', href='css/app.css')
+    script(async nomodule src="https://cdn.ampproject.org/v0.js" crossorigin="anonymous")
+    script(type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js')
+    script(defer src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1")
+    script.
+      function gtag() {dataLayer.push(arguments);}
+          (window.dataLayer = window.dataLayer || []), gtag("js", new Date()), gtag("config", "UA-6536106-1");
+
+    block head
+    //- CSS files
+    block _css-files_
+  body    
+    .OuterContainer    
+           
+      //- Dinamic content
+      block _main-content_
+      
+      include ./footer.pug
+      
+    //- JS files
+    
+    //vendor
+    //- script(src="js/vendor/d3.v4-min.js" async)
+    script(src='js/vendor/jquery.min.js')
+    script(src='js/vendor/materialize.min.js')    
+    //- script(src="https://code.highcharts.com/highcharts.js")
+    //- script(src="https://code.highcharts.com/modules/accessibility.js")
+    script(defer src="js/modules/index.js")
+    script(src="js/app.js")
+    block _js-files_
+      

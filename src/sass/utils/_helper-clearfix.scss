@@ -1,0 +1,28 @@
+/*---------------------------------------------------------------------------*
+ * Start: Helper clearfix
+----------------------------------------------------------------------------*/
+.h-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
+
+.mt-10{
+  margin-top:10px;
+}
+
+.is-center{
+  display: flex !important;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/*---------------------------------------------------------------------------*
+ * Endof: Helper clearfix
+----------------------------------------------------------------------------*/

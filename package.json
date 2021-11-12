@@ -1,0 +1,75 @@
+{
+    "name": "especial_14N",
+    "version": "1.0.0",
+    "description": "Especial_14N",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prod": "node prod_scripts.js",
+        "zip": "node zip_scripts.js",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com:genyleong/proyecto-audios.git"
+    },
+    "keywords": [
+        "IDLR"
+    ],
+    "author": "Génesis León",
+    "license": "ISC",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "frontend": {
+        "name": "frontend especial",
+        "stylesheets": "src/css",
+        "javascripts": "src/js"
+    },
+    "devDependencies": {
+        "clean-css": "^4.1.9",
+        "del": "^3.0.0",
+        "folder-zip": "0.0.5",
+        "frontend-md": "0.0.4",
+        "fs-extra": "^7.0.1",
+        "gulp": "^3.7.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-compass": "^2.1.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-concat-css": "^3.1.0",
+        "gulp-images-convert": "^1.0.1",
+        "gulp-jshint": "^2.0.4",
+        "gulp-minify": "^3.1.0",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-notify": "^3.2.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.1",
+        "gulp-uglify": "^3.0.1",
+        "gulp-watch": "^5.0.1",
+        "jshint": "^2.9.6",
+        "recursive-copy": "^2.0.6"
+    },
+    "dependencies": {
+        "assert": "^1.4.1",
+        "async": "^2.6.1",
+        "browser-sync": "^2.27.5",
+        "buffer": "^5.2.1",
+        "express": "^4.14.0",
+        "fs": "0.0.1-security",
+        "gulp-csvtojson": "^0.2.0",
+        "gulp-filter": "^5.1.0",
+        "gulp-install": "^1.1.0",
+        "imagemin-jpeg-recompress": "^6.0.0",
+        "lodash": "^4.17.21",
+        "materialize": "^1.0.0",
+        "materialize-css": "^1.0.0",
+        "png-to-jpeg": "^1.0.1",
+        "replace": "^1.2.1",
+        "zip-folder": "^1.0.0"
+    }
+}

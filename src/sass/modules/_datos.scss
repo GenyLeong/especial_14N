@@ -1,0 +1,26 @@
+#datos_container {
+    z-index: 99;
+    position: relative;
+    background: $principal;
+    color: $white;
+    .datos_hechos,
+    .datos_denuncias {
+        opacity: 0;
+    }
+    .number {
+        //display: inline-block;
+        font-size: 7rem;
+        float: left;
+        margin: 0 1rem 0rem 0rem;
+        min-width: 300px;
+        text-align: center;
+    }
+    .text {
+        //display: inline-block;
+        font-size: 1.8rem;
+        margin: 0 0;
+        font-weight: 500;
+        font-family: $font_oswald;
+        //float: right;
+    }
+}

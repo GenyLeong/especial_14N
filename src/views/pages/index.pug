@@ -1,0 +1,13 @@
+extends ../layout/base.pug
+block _css-files_
+
+    
+block _main-content_
+  - var active_link = 'spanish';
+  include ../modules/portada.pug
+  include ../modules/testimonios.pug
+  include ../modules/datos_hechos.pug
+  include ../modules/denuncias.pug
+  include ../modules/datos_denuncias.pug  
+  include ../modules/timeline.pug
+  //- include ../modules/main-content/investigaciones.pug

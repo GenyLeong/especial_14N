@@ -1,0 +1,20 @@
+.B2bNav {
+    display: none;
+    nav {
+        background-color: $principal;
+        height: 60px;
+        .nav-wrapper {
+            z-index: 99999;
+        }
+        .brand-logo {
+            img {
+                max-width: 170px;
+            }
+        }
+        .popup {
+            .social-icon {
+                max-width: 28px;
+            }
+        }
+    }
+}
